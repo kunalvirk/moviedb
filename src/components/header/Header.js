@@ -19,8 +19,8 @@ const Header = () => {
                     </div>
                     <TopNav />
                 </div>
-                <div>
-                    <Search />
+                <div className={css.searchWrapper}>
+                    <Search mode="multi" /> {/*Ref. api*/}
                 </div>
             </div>
         </header>

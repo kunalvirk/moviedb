@@ -56,7 +56,6 @@ class HeroSlider extends Component {
             slidesToShow: 1,
             slidesToScroll: 1
         }
-        console.log(this.state.items)
         return (
             <div className={css.heroSlider}>
                 <Slider {...settings}>

@@ -3,7 +3,7 @@ header {
     display: flex;
     justify-content: space-between;
     background-color: #081C24;
-    padding: 20px 15px;
+    padding: 20px 15px 0;
     box-sizing: border-box;
 }
 .logo {
@@ -15,4 +15,45 @@ header {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+}
+.searchWrapper {
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+.searchWrapper > input {
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+.searchWrapper > ul {
+    width: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    list-style: none;
+    z-index: 99999;
+    box-shadow: 0px 7px 10px -5px #000;
+    margin: 0;
+    padding: 0;
+}
+.searchWrapper > ul li {
+    width: 100%;
+    display: inline-block;
+    padding: 5px;
+    border-bottom: 1px solid #e1e1e1;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: bold;
+}
+.searchWrapper > ul li span {
+    font-size: 12px;
+    font-weight: normal;
+}
+.searchWrapper > ul li a {
+    color: #000;
+    text-decoration: none;
 }
