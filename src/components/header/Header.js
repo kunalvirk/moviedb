@@ -1,4 +1,8 @@
 import React from 'react';
+import TopNav from '../Navigation/TopNav';  
+import Search from '../header/Search/Search';
+
+import css from './header.css';
 
 const Header = () => {
     const logo = () => {
@@ -8,8 +12,16 @@ const Header = () => {
 
     return (
         <header>
-            <div className="logo">
-                {logo()}
+            <div className="container">
+                <div className={css.topHeader}>
+                    <div className={css.logo}>
+                        {logo()}
+                    </div>
+                    <TopNav />
+                </div>
+                <div className={css.searchWrapper}>
+                    <Search mode="multi" /> {/*Ref. api*/}
+                </div>
             </div>
         </header>
     );

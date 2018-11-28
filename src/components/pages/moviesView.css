@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.flexGrid {
+    display: flex;
+    flex-wrap:wrap;
+}
+.flexBox {
+    position: relative;
+}
+.flexBox img {
+    max-width:100%;
+    width: auto;
+    height: auto;
+}
+.flexBox:nth-child(1) {
+    width:50%;
+    min-height: 320px;
+}
+.flexBox:nth-child(2) {
+    width:50%;
+    min-height: 320px;
+}
+.flexBox {
+    width:33.33%;
+    display:flex;
+    align-items: flex-end;
+}
+
+.contentInfo {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: #0e0e0e;
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+}
+.contentInfo .container {
+    position: relative;
+    z-index: 2;
+}
+.contentBackdrop {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.3;
+    z-index: 1;
+}
+.contentFront {
+    position: relative;
+    z-index: 2;
+}
+.contentHeader {
+    width: 100%;
+    display: flex;
+    padding: 50px 0;
+}
+.contentPoster {
+    max-width: 30%;
+}
+.contentPoster > img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}

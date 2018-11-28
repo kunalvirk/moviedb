@@ -1,0 +1,27 @@
+.heroSlider {
+    width: 100%;
+    display: inline-block;
+    height: 450px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 30px 0;
+    background:url('./resources/tmdb-bg.svg') repeat;
+}
+.sliderImage {
+    width: 450px;
+    float: left;
+    padding: 0;
+    box-sizing: border-box;
+    height: 380px;
+    overflow: hidden;
+    margin:0 25px;
+}
+.sliderImage > img {
+    max-width: auto;
+    width: 100%;
+    height: auto;
+}
+.sliderTitle {
+    width: 100%;
+    color: #fff;
+}
